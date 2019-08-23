@@ -83,7 +83,7 @@ print("예상 판매량: {}".format(expected_sales(
        float(X_test[3][1]), float(X_test[3][1]), float(X_test[3][2]), beta_0, beta_1, beta_2, beta_3)))
 
 """
-Req. 1-5. pickle로 lrmodel 데이터 저장
+Req. 1-5. pickle로 lrmodel 데이터 저장(완료)
 파일명: model.clf
 """
 with open('model.clf', 'wb') as fout:
