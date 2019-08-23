@@ -37,7 +37,7 @@ https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearReg
 lrmodel = LinearRegression().fit(X_train, Y_train)
 
 print(lrmodel.coef_)
-# Req 1-2-2. 학습된 가중치 값 저장
+# Req 1-2-2. 학습된 가중치 값 저장(완료)
 beta_0 = lrmodel.coef_[0][0]
 beta_1 = lrmodel.coef_[0][1]
 beta_2 = lrmodel.coef_[0][2]
@@ -49,7 +49,7 @@ print("beta_1: %f" % beta_1)
 print("beta_2: %f" % beta_2)
 print("beta_3: %f" % beta_3)
 
-# Req. 1-3-1.
+# Req. 1-3-1.(완료)
 # X_test_pred에 테스트 데이터에 대한 예상 판매량을 모두 구하여 len(y_test) X 1 의 크기를 갖는 열벡터에 저장합니다. 
 X_test_pred = lrmodel.predict(X_test)
 """
@@ -59,9 +59,9 @@ Variance score값을 출력합니다.
 함수를 찾아 사용하여 봅니다.
 https://scikit-learn.org/stable/index.html
 """
-# Req. 1-3-2. Mean squared error 계산
+# Req. 1-3-2. Mean squared error 계산(완료)
 print("Mean squared error: %.2f" % mean_squared_error(Y_test, X_test_pred))
-# Req. 1-3-3. Variance score 계산
+# Req. 1-3-3. Variance score 계산(완료)
 print("Variance score: %.2f" % r2_score(Y_test, X_test_pred))
 
 # Req. 1-4-1. 
@@ -74,7 +74,7 @@ def expected_sales(tv, rd, newspaper, beta_0, beta_1, beta_2, beta_3):
     return (tv*beta_0)+(rd*beta_1)+(newspaper*beta_2)+beta_3
 
 
-# Req. 1-4-2.
+# Req. 1-4-2.(완료)
 # test 데이터에 있는 값을 직접적으로 넣어서 예상 판매량 값을 출력합니다.
 print("TV: {}, Radio: {}, Newspaper: {} 판매량: {}".format(
    X_test[3][0], X_test[3][1], X_test[3][2], Y_test[3]))
