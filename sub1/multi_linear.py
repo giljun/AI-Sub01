@@ -21,7 +21,7 @@ csv_data = np.loadtxt("advertising.csv", skiprows=1, delimiter=",", usecols= ran
 X = csv_data[:, 0:3]
 Y = csv_data[:, 3:]
 
-# Req 1-1-2. 학습용 데이터와 테스트용 데이터로 분리합니다.
+# Req 1-1-2. 학습용 데이터와 테스트용 데이터로 분리합니다.(완료)
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=1234)
 
 """
