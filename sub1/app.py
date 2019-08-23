@@ -21,7 +21,7 @@ with open('model.clf', 'rb') as fout:
 
 print(data.coef_)
 
-# Req. 2-1-2. 입력 받은 광고비 데이터에 따른 예상 판매량을 출력하는 lin_pred() 함수 구현
+# Req. 2-1-2. 입력 받은 광고비 데이터에 따른 예상 판매량을 출력하는 lin_pred() 함수 구현(완료)
 def lin_pred(test_str):
 
     test_str = test_str.replace("<@UMHN12M40> ", "")
