@@ -16,7 +16,7 @@ X는 TV, Radio, Newspaper column 에 해당하는 데이터를 저장해야 합�
 Y는 Sales column 에 해당하는 데이터를 저장해야 합니다.
 """
 
-# Req 1-1-1. advertising.csv 데이터 읽고 저장
+# Req 1-1-1. advertising.csv 데이터 읽고 저장(완료)
 csv_data = np.loadtxt("advertising.csv", skiprows=1, delimiter=",", usecols= range(1, 5))
 X = csv_data[:, 0:3]
 Y = csv_data[:, 3:]
